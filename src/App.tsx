@@ -12,7 +12,7 @@ function App() {
     // 	<UpdateButton op={'-'} />
     // </CountProvider>
     <div className='App'>
-      <Greet name='Jerome' />
+      <Greet name='Jerome' messageCount={10} isLoggedIn={false} />
     </div>
   );
 }
