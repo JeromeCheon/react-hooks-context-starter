@@ -1,15 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { CountProvider } from './Contexts/Count';
 import CountLabel from './Components/CountLabel';
-import { PlusButton } from './Components/PlusButton';
+import { UpdateButton } from './Components/OperatorButton';
 
 function App() {
 	return (
 		<CountProvider>
 			<CountLabel />
-			<PlusButton />
+			<UpdateButton op={'+'} />
+			<UpdateButton op={'-'} />
 		</CountProvider>
 	);
 }
