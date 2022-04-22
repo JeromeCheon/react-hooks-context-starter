@@ -1,4 +1,5 @@
 import './App.css';
+import { Greet } from './Components/Greet';
 import { Heading } from './Components/Heading';
 import { Oscar } from './Components/Oscar';
 import { Status } from './Components/Status';
@@ -34,6 +35,7 @@ function App() {
 		// 	<UpdateButton op={'-'} />
 		// </CountProvider>
 		<div className='App'>
+			<Greet name='Jerome' isLoggedIn />
 			<Status status='success' />
 			<Oscar>
 				<Heading>Placeholder text</Heading>
