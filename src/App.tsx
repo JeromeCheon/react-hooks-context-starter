@@ -1,7 +1,5 @@
 import './App.css';
-import { Greet } from './Components/Greet';
-import { Person } from './Components/Person';
-import { PersonList } from './Components/PersonList';
+import { Heading } from './Components/Heading';
 import { Status } from './Components/Status';
 // import { CountProvider } from './Contexts/Count';
 // import CountLabel from './Components/CountLabel';
@@ -35,8 +33,8 @@ function App() {
 		// 	<UpdateButton op={'-'} />
 		// </CountProvider>
 		<div className='App'>
-			<Greet name='Jerome' messageCount={10} isLoggedIn={false} />
 			<Status status='success' />
+			<Heading>Placeholder text</Heading>
 		</div>
 	);
 }
