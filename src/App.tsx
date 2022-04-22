@@ -2,6 +2,7 @@ import './App.css';
 import { Greet } from './Components/Greet';
 import { Person } from './Components/Person';
 import { PersonList } from './Components/PersonList';
+import { Status } from './Components/Status';
 // import { CountProvider } from './Contexts/Count';
 // import CountLabel from './Components/CountLabel';
 // import { UpdateButton } from './Components/OperatorButton';
@@ -35,8 +36,7 @@ function App() {
 		// </CountProvider>
 		<div className='App'>
 			<Greet name='Jerome' messageCount={10} isLoggedIn={false} />
-			<Person name={personName} />
-			<PersonList names={nameList} />
+			<Status status='success' />
 		</div>
 	);
 }
