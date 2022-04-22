@@ -1,5 +1,6 @@
 import './App.css';
 import { Heading } from './Components/Heading';
+import { Oscar } from './Components/Oscar';
 import { Status } from './Components/Status';
 // import { CountProvider } from './Contexts/Count';
 // import CountLabel from './Components/CountLabel';
@@ -34,7 +35,9 @@ function App() {
 		// </CountProvider>
 		<div className='App'>
 			<Status status='success' />
-			<Heading>Placeholder text</Heading>
+			<Oscar>
+				<Heading>Placeholder text</Heading>
+			</Oscar>
 		</div>
 	);
 }
