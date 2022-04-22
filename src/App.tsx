@@ -1,15 +1,18 @@
 import './App.css';
-import { Button } from './Components/Button';
-import { Container } from './Components/Container';
-import { Input } from './Components/Input';
-import { Person } from './Components/Person';
-import { Counter } from './Components/state/Counter';
-import { User } from './Components/state/User';
+import { Box } from './Contexts/Box';
+import { ThemeContextProvider } from './Contexts/ThemeContext';
+import { User } from './Contexts/User';
+import { UserContextProvider } from './Contexts/UserContext';
 
 function App() {
 	return (
 		<div className='App'>
-			<Counter />
+			<ThemeContextProvider>
+				<Box />
+			</ThemeContextProvider>
+			<UserContextProvider>
+				<User />
+			</UserContextProvider>
 		</div>
 	);
 }
