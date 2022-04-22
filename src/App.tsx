@@ -3,7 +3,7 @@ import { Button } from './Components/Button';
 import { Container } from './Components/Container';
 import { Input } from './Components/Input';
 import { Person } from './Components/Person';
-import { LoggedIn } from './Components/state/LoggedIn';
+import { User } from './Components/state/User';
 
 function App() {
 	return (
@@ -21,7 +21,7 @@ function App() {
 				}}
 			/>
 			<Container style={{ border: '1px solid black', padding: '1rem' }} />
-			<LoggedIn />
+			<User />
 		</div>
 	);
 }
