@@ -1,4 +1,5 @@
 import './App.css';
+import { Button } from './Components/Button';
 import { Greet } from './Components/Greet';
 import { Heading } from './Components/Heading';
 import { Oscar } from './Components/Oscar';
@@ -35,11 +36,11 @@ function App() {
 		// 	<UpdateButton op={'-'} />
 		// </CountProvider>
 		<div className='App'>
-			<Greet name='Jerome' isLoggedIn />
-			<Status status='success' />
-			<Oscar>
-				<Heading>Placeholder text</Heading>
-			</Oscar>
+			<Button
+				handleClick={() => {
+					console.log('Button clicked');
+				}}
+			/>
 		</div>
 	);
 }
