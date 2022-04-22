@@ -1,12 +1,9 @@
 import './App.css';
 import { Button } from './Components/Button';
 import { Container } from './Components/Container';
-import { Greet } from './Components/Greet';
-import { Heading } from './Components/Heading';
 import { Input } from './Components/Input';
-import { Oscar } from './Components/Oscar';
 import { Person } from './Components/Person';
-import { Status } from './Components/Status';
+import { LoggedIn } from './Components/state/LoggedIn';
 
 function App() {
 	return (
@@ -24,6 +21,7 @@ function App() {
 				}}
 			/>
 			<Container style={{ border: '1px solid black', padding: '1rem' }} />
+			<LoggedIn />
 		</div>
 	);
 }
